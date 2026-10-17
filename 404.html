@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="robots" content="noindex">
+    <title>Página no encontrada | CV Marlon Chimarro</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='22' fill='%23cbb5ff'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%232b2240' text-anchor='middle'%3EMC%3C/text%3E%3C/svg%3E">
+    <!--
+        Estilos en línea a propósito: GitHub Pages sirve este archivo para
+        CUALQUIER ruta inexistente (p. ej. /repo/a/b/c), así que una hoja de
+        estilos con ruta relativa podría no cargarse.
+    -->
+    <style>
+        :root {
+            --c-primary: #6a3d9a;
+            --c-primary-strong: #4e2a76;
+            --c-accent: #f2a7c3;
+            --c-text: #2b2240;
+            --c-text-muted: #564c6b;
+            --c-bg: #fdf8f2;
+            --c-on-primary: #ffffff;
+            --b1: #ffb3cc; --b2: #a9d2ff; --b3: #a6e8c8; --blob-o: 0.55;
+            --font-serif: Georgia, "Times New Roman", serif;
+            --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --c-primary: #d6bcff;
+                --c-primary-strong: #ecdfff;
+                --c-accent: #f5a9c6;
+                --c-text: #f4effb;
+                --c-text-muted: #c9bfdb;
+                --c-bg: #17131f;
+                --c-on-primary: #1b1426;
+                --blob-o: 0.22;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 1rem;
+            font-family: var(--font-sans);
+            line-height: 1.65;
+            color: var(--c-text);
+            background:
+                radial-gradient(40vmax circle at 0% 0%, color-mix(in srgb, var(--b1) calc(var(--blob-o) * 100%), transparent), transparent 70%),
+                radial-gradient(40vmax circle at 100% 30%, color-mix(in srgb, var(--b2) calc(var(--blob-o) * 100%), transparent), transparent 70%),
+                radial-gradient(40vmax circle at 30% 100%, color-mix(in srgb, var(--b3) calc(var(--blob-o) * 100%), transparent), transparent 70%),
+                var(--c-bg);
+        }
+        main { max-width: 36rem; }
+        .code {
+            margin: 0;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--c-text-muted);
+        }
+        h1 {
+            margin: 0.5rem 0 1rem;
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+            line-height: 1.2;
+            font-style: italic;
+            border-left: 6px solid var(--c-accent);
+            padding-left: 0.75rem;
+        }
+        code { overflow-wrap: anywhere; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            padding: 0.6rem 1.1rem;
+            font-weight: 600;
+            color: var(--c-on-primary);
+            background: var(--c-primary);
+            border-radius: 999px;
+            text-decoration: none;
+        }
+        .btn:hover { background: var(--c-primary-strong); }
+        .btn:focus-visible { outline: 3px solid var(--c-primary); outline-offset: 3px; }
+        svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="code">Error 404</p>
+        <h1>No encontramos esta página</h1>
+        <p>La dirección <code id="ruta">solicitada</code> no existe en este sitio. Puede que el enlace esté mal escrito o que la página se haya movido.</p>
+        <p>Todo el currículum está en una sola página. Desde el inicio puedes ir a Perfil, Experiencia, Educación, Proyectos, Habilidades o Contacto.</p>
+        <a class="btn" id="home" href="./" title="Ir a la página principal del currículum">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg>
+            Ir al inicio del CV
+        </a>
+    </main>
+    <script>
+        (function () {
+            var path = location.pathname;
+            document.getElementById('ruta').textContent = path;
+            // En un sitio de proyecto de GitHub Pages (usuario.github.io/<repo>/...)
+            // el inicio es el primer segmento de la ruta. "./" queda como respaldo sin JS.
+            if (/\.github\.io$/.test(location.hostname)) {
+                var first = path.split('/')[1];
+                document.getElementById('home').href = first ? '/' + first + '/' : '/';
+            }
+        })();
+    </script>
+</body>
+</html>

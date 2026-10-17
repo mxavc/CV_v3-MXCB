@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Currículum de Marlon Xavier Chimarro Bermeo, estudiante de Ingeniería en Sistemas con formación en Biología.">
+    <title>CV | Marlon Xavier Chimarro Bermeo</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..800&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1;1,9..144,400..700,0..100,0..1&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        /* Marca que JS está activo y aplica el tema guardado antes de pintar (evita parpadeo). */
+        (function () {
+            var d = document.documentElement;
+            d.classList.remove('no-js');
+            d.classList.add('js');
+            try {
+                var t = localStorage.getItem('tema');
+                if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+    <script src="js/main.js" defer></script>
+</head>
+<body id="inicio">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- Fondo decorativo: manchas pastel difuminadas -->
+    <div class="bg-art" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <span class="blob blob-4"></span>
+        <span class="blob blob-5"></span>
+    </div>
+
+    <header class="site-header">
+        <div class="scroll-progress" aria-hidden="true"></div>
+        <div class="header-inner">
+            <a class="brand" href="#inicio" title="Ir al inicio de la página"><span class="brand-mark" aria-hidden="true">MC</span>Marlon Chimarro</a>
+
+            <div class="menu-panel">
+                <nav class="site-nav" aria-label="Secciones del currículum">
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="#perfil">Perfil</a></li>
+                        <li><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                        <li><a class="nav-link" href="#educacion">Educación</a></li>
+                        <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                        <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions js-only">
+                    <button class="btn btn-ghost" id="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar entre modo claro y oscuro">
+                        <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+                        <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                        <span class="theme-label">Modo oscuro</span>
+                    </button>
+                    <button class="btn" id="print-btn" type="button" title="Abre el diálogo de impresión. Elige «Guardar como PDF» para obtener un archivo.">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 9V3h10v6M7 18H4v-7h16v7h-3M7 14h10v7H7z"/></svg>
+                        <span>Imprimir / PDF</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+
+        <!-- ============ PERFIL ============ -->
+        <section class="section profile" id="perfil" aria-labelledby="perfil-titulo">
+            <div class="profile-grid">
+                <div class="photo-wrap">
+                    <img class="profile-photo" src="assets/foto-perfil.jpg" width="1024" height="1280"
+                         alt="Fotografía de Marlon Xavier Chimarro Bermeo">
+                    <!-- Sello giratorio decorativo -->
+                    <div class="stamp" aria-hidden="true">
+                        <svg viewBox="0 0 120 120">
+                            <defs><path id="stamp-circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+                            <text><textPath href="#stamp-circle" textLength="286" lengthAdjust="spacing">Sistemas ✦ Biología ✦ Código ✦ Ciencia ✦</textPath></text>
+                        </svg>
+                        <span class="stamp-core">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="profile-text">
+                    <p class="eyebrow">Currículum Vitae
+                        <svg viewBox="0 0 40 20" aria-hidden="true" focusable="false"><path d="M2 14c10-12 22-12 34-4M30 4l6 6-8 3"/></svg>
+                    </p>
+                    <h1 class="name">Marlon Xavier <span class="hl">Chimarro Bermeo</span></h1>
+                    <p class="role">Estudiante de Ingeniería en Sistemas · Formación en Biología</p>
+                    <ul class="quick-contact" aria-label="Contacto rápido">
+                        <li>
+                            <a href="mailto:max_inm@outlook.com" title="Escribir un correo a max_inm@outlook.com">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                                <span>max_inm@outlook.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/marlon-xavier-chimarro-bermeo-907769152/" target="_blank" rel="noopener noreferrer" title="Perfil de LinkedIn (abre en pestaña nueva)">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+                                <span>LinkedIn</span>
+                                <svg class="icon icon-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+                                <span class="sr-only">(abre en pestaña nueva)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <svg class="sparkle sparkle-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg>
+                <svg class="sparkle sparkle-2" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg>
+                <svg class="sparkle sparkle-3" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/></svg>
+            </div>
+
+            <div class="profile-about">
+                <h2 class="section-title" id="perfil-titulo">Perfil
+                    <a class="anchor" href="#perfil" aria-label="Enlace directo a la sección Perfil" title="Enlace a esta sección">#</a>
+                </h2>
+                <div class="prose">
+                    <p>Soy estudiante de Ingeniería en Sistemas de la Universidad Politécnica Nacional, con interés por la programación, el desarrollo de software y el uso de la tecnología para resolver problemas reales.</p>
+                    <p>También tengo formación en Biología y experiencia en diagnóstico molecular y laboratorio. Me adapto bien a entornos colaborativos y me gusta aprender de manera constante.</p>
+                </div>
+                <h3 class="subheading">Intereses</h3>
+                <ul class="tag-list" aria-label="Intereses personales">
+                    <li class="tag">Música y guitarra</li>
+                    <li class="tag">Fútbol</li>
+                    <li class="tag">Ecuavóley</li>
+                    <li class="tag">Gimnasio</li>
+                    <li class="tag">Voluntariado</li>
+                    <li class="tag">Cocina</li>
+                    <li class="tag">Documentales</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCIA ============ -->
+        <section class="section" id="experiencia" aria-labelledby="experiencia-titulo">
+            <h2 class="section-title" id="experiencia-titulo">Experiencia
+                <a class="anchor" href="#experiencia" aria-label="Enlace directo a la sección Experiencia" title="Enlace a esta sección">#</a>
+            </h2>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Ayudante de Cátedra</h3>
+                    <p class="entry-org">Universidad Tecnológica Equinoccial · Laboratorio de Investigación Genética</p>
+                    <p class="entry-meta"><mark class="todo">[COMPLETAR: periodo]</mark></p>
+                </header>
+                <ul class="entry-list">
+                    <li>Apoyo en la preparación y ejecución de prácticas de laboratorio.</li>
+                    <li>Asistencia a estudiantes en el manejo de equipos y técnicas genéticas.</li>
+                    <li>Supervisión del cumplimiento de normas de bioseguridad.</li>
+                    <li>Colaboración en la recolección y análisis de datos experimentales.</li>
+                    <li>Elaboración de informes técnicos y académicos de las prácticas realizadas.</li>
+                    <li>Soporte al docente en la organización de materiales y recursos didácticos.</li>
+                </ul>
+            </article>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Pasante Ayudante</h3>
+                    <p class="entry-org">Micelio · Producción de Hongos Gourmet</p>
+                    <p class="entry-meta"><mark class="todo">[COMPLETAR: periodo]</mark></p>
+                </header>
+                <ul class="entry-list">
+                    <li>Documentación de procesos y actividades de producción.</li>
+                    <li>Participación en la cadena de producción de hongos gourmet.</li>
+                    <li>Gestión de distribución y entrega de productos al cliente.</li>
+                    <li>Preparación de sustratos para el cultivo.</li>
+                    <li>Control de calidad en cada etapa de producción.</li>
+                    <li>Supervisión de procesos y cumplimiento de estándares.</li>
+                    <li>Cuidado y mantenimiento de ambientes de crecimiento.</li>
+                </ul>
+            </article>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Biólogo · Diagnóstico Molecular</h3>
+                    <p class="entry-org">BIOMOL</p>
+                    <p class="entry-meta"><time datetime="2019-11">nov. 2019</time> – <time datetime="2021-12">dic. 2021</time></p>
+                </header>
+                <ul class="entry-list">
+                    <li>Diagnóstico de muestras biológicas mediante técnicas moleculares.</li>
+                    <li>Ejecución de pruebas PCR y otros métodos de detección de SARS-CoV-2.</li>
+                    <li>Procesamiento y análisis de resultados en laboratorio especializado.</li>
+                    <li>Aplicación de protocolos de bioseguridad en todas las fases de trabajo.</li>
+                    <li>Documentación de procedimientos y resultados para trazabilidad.</li>
+                    <li>Colaboración en equipos multidisciplinarios de diagnóstico clínico.</li>
+                    <li>Supervisión del cumplimiento de estándares de calidad en el laboratorio.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- ============ EDUCACIÓN ============ -->
+        <section class="section" id="educacion" aria-labelledby="educacion-titulo">
+            <h2 class="section-title" id="educacion-titulo">Educación
+                <a class="anchor" href="#educacion" aria-label="Enlace directo a la sección Educación" title="Enlace a esta sección">#</a>
+            </h2>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Ingeniería en Sistemas</h3>
+                    <p class="entry-org">Universidad Politécnica Nacional</p>
+                    <p class="entry-meta">En curso · <mark class="todo">[COMPLETAR: año de inicio – egreso previsto]</mark></p>
+                </header>
+            </article>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title"><mark class="todo">[COMPLETAR: título obtenido en Biología]</mark></h3>
+                    <p class="entry-org"><mark class="todo">[COMPLETAR: institución]</mark></p>
+                    <p class="entry-meta"><mark class="todo">[COMPLETAR: periodo]</mark></p>
+                </header>
+            </article>
+        </section>
+
+        <!-- ============ PROYECTOS ============ -->
+        <section class="section" id="proyectos" aria-labelledby="proyectos-titulo">
+            <h2 class="section-title" id="proyectos-titulo">Proyectos
+                <a class="anchor" href="#proyectos" aria-label="Enlace directo a la sección Proyectos" title="Enlace a esta sección">#</a>
+            </h2>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Sistema de gestión de proyectos de profesores</h3>
+                </header>
+                <p>Diseño de una aplicación web para organizar proyectos académicos, asignar tareas y dar seguimiento a avances de profesores.</p>
+                <p><strong>Resultado:</strong> plataforma funcional para mejorar la trazabilidad y colaboración en proyectos educativos.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                    <li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">JavaScript</li><li class="tag">MySQL</li><li class="tag">PHP</li>
+                </ul>
+            </article>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">IA aplicada en sensores de plantas</h3>
+                </header>
+                <p>Sistema inteligente para monitorear el crecimiento de plantas mediante sensores de humedad, temperatura y luz.</p>
+                <p><strong>Resultado:</strong> predicción de necesidades de riego y optimización de ambientes de cultivo.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                    <li class="tag">Python</li><li class="tag">TensorFlow</li><li class="tag">Arduino</li><li class="tag">Sensores IoT</li>
+                </ul>
+            </article>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Página web personal</h3>
+                </header>
+                <p>Desarrollo de un sitio en HTML5 para portafolio profesional.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                    <li class="tag">HTML5</li><li class="tag">CSS3</li>
+                </ul>
+            </article>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Seguridad informática</h3>
+                </header>
+                <p>Configuración de Wireshark y análisis de tráfico en prácticas académicas.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                    <li class="tag">Wireshark</li><li class="tag">Npcap</li>
+                </ul>
+            </article>
+
+            <article class="entry">
+                <header class="entry-header">
+                    <h3 class="entry-title">Laboratorio Docker</h3>
+                </header>
+                <p>Implementación de redes <i lang="en">bridge</i> y vinculación de contenedores.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                    <li class="tag">Docker</li><li class="tag">Nginx</li><li class="tag">MySQL</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- ============ HABILIDADES ============ -->
+        <section class="section" id="habilidades" aria-labelledby="habilidades-titulo">
+            <h2 class="section-title" id="habilidades-titulo">Habilidades
+                <a class="anchor" href="#habilidades" aria-label="Enlace directo a la sección Habilidades" title="Enlace a esta sección">#</a>
+            </h2>
+            <dl class="skills">
+                <div class="skill-group">
+                    <dt>Desarrollo web</dt>
+                    <dd>HTML5, CSS3, JavaScript, PHP</dd>
+                </div>
+                <div class="skill-group">
+                    <dt>Bases de datos</dt>
+                    <dd>MySQL</dd>
+                </div>
+                <div class="skill-group">
+                    <dt>Infraestructura y redes</dt>
+                    <dd>Docker, Nginx, Wireshark, Npcap</dd>
+                </div>
+                <div class="skill-group">
+                    <dt>IA e IoT</dt>
+                    <dd>Python, TensorFlow, Arduino, sensores IoT</dd>
+                </div>
+                <div class="skill-group">
+                    <dt>Laboratorio</dt>
+                    <dd>Diagnóstico molecular, PCR, bioseguridad, control de calidad, documentación técnica</dd>
+                </div>
+                <div class="skill-group">
+                    <dt>Competencias transversales</dt>
+                    <dd>Trabajo en equipo, trabajo multidisciplinario, adaptabilidad, aprendizaje constante</dd>
+                </div>
+                <div class="skill-group">
+                    <dt>Idiomas</dt>
+                    <dd><mark class="todo">[COMPLETAR: idiomas y nivel]</mark></dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- ============ CONTACTO ============ -->
+        <section class="section" id="contacto" aria-labelledby="contacto-titulo">
+            <h2 class="section-title" id="contacto-titulo">Contacto
+                <a class="anchor" href="#contacto" aria-label="Enlace directo a la sección Contacto" title="Enlace a esta sección">#</a>
+            </h2>
+            <p class="prose">Estoy abierto a oportunidades de colaboración, preguntas o simplemente a conversar sobre temas de interés. La forma más rápida de contactarme es por correo.</p>
+
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <span class="contact-label">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        Correo
+                    </span>
+                    <span class="contact-value">
+                        <a href="mailto:max_inm@outlook.com" id="email" title="Escribir un correo (abre tu aplicación de correo)">max_inm@outlook.com</a>
+                        <button class="btn btn-small js-only" id="copy-email" type="button" data-copy="max_inm@outlook.com" aria-describedby="copy-status" title="Copiar la dirección de correo al portapapeles">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>
+                            <span>Copiar email</span>
+                        </button>
+                        <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+                    </span>
+                </li>
+                <li class="contact-item">
+                    <span class="contact-label">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        Correo alternativo
+                    </span>
+                    <span class="contact-value">
+                        <a href="mailto:max_inm@hotmail.com" title="Escribir un correo (abre tu aplicación de correo)">max_inm@hotmail.com</a>
+                    </span>
+                </li>
+                <li class="contact-item">
+                    <span class="contact-label">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+                        WhatsApp
+                    </span>
+                    <span class="contact-value">
+                        <a href="https://wa.me/593999905758" target="_blank" rel="noopener noreferrer" title="Escribir por WhatsApp (abre en pestaña nueva)">
+                            +593 99 990 5758
+                            <svg class="icon icon-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+                            <span class="sr-only">(abre en pestaña nueva)</span>
+                        </a>
+                    </span>
+                </li>
+                <li class="contact-item">
+                    <span class="contact-label">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+                        LinkedIn
+                    </span>
+                    <span class="contact-value">
+                        <a href="https://www.linkedin.com/in/marlon-xavier-chimarro-bermeo-907769152/" target="_blank" rel="noopener noreferrer" title="Perfil de LinkedIn (abre en pestaña nueva)">
+                            linkedin.com/in/marlon-xavier-chimarro-bermeo-907769152
+                            <svg class="icon icon-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+                            <span class="sr-only">(abre en pestaña nueva)</span>
+                        </a>
+                    </span>
+                </li>
+                <li class="contact-item">
+                    <span class="contact-label">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-4 1.5-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.8 2.8 5.8 3.1 5.8 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+                        GitHub
+                    </span>
+                    <span class="contact-value"><mark class="todo">[COMPLETAR: URL de perfil de GitHub]</mark></span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-note">¡Gracias por pasar!</p>
+        <p>&copy; 2026 Marlon Xavier Chimarro Bermeo</p>
+    </footer>
+
+    <!-- Acciones flotantes (esquina inferior derecha) -->
+    <div class="floating-actions">
+        <a class="fab to-top" href="#inicio" title="Volver al inicio de la página">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            <span>Volver arriba</span>
+        </a>
+        <a class="fab whatsapp-fab" href="https://wa.me/593999905758" target="_blank" rel="noopener noreferrer" title="Escribir por WhatsApp al +593 99 990 5758 (abre en pestaña nueva)">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+            <span>WhatsApp</span>
+            <span class="sr-only">(abre en pestaña nueva)</span>
+        </a>
+    </div>
+</body>
+</html>
